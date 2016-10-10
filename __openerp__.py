@@ -6,5 +6,6 @@
     'depends': ['sale'],
     'data': [
         'views/sale_contract_type.xml',
+        'views/sale_order_line.xml',
     ]
 }

@@ -22,5 +22,18 @@
                 </field>
             </field>
         </record>
+
+        <record model="ir.ui.view" id="sale_order_line_search_view">
+            <field name="name">sale.order.line.search</field>
+            <field name="model">sale.order.line</field>
+            <field name="arch" type="xml">
+                <search>
+                    <group string="Group By">
+                        <filter name="group_by_contract_type" string="Contract Type"
+                                context="{'group_by': 'contract_type'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
     </data>
 </openerp>
